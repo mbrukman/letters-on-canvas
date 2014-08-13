@@ -1,0 +1,109 @@
+<html ng-app>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="letters.css" />
+
+  <!-- Placeholder for external font loading. -->
+  <link rel="stylesheet" type="text/css" href="" id="fontLink" />
+
+  <script src="third_party/angular/latest/angular.min.js"
+          type="text/javascript"></script>
+  <script src="third_party/jscolor/latest/jscolor.js"
+          type="text/javascript"></script>
+  <script src="letters.js"
+          type="text/javascript"></script>
+</head>
+<body>
+
+
+<div ng-controller="LettersCtrl" align="center">
+
+  <table>
+    <tr>
+      <td>
+        <h1>Letters on HTML5 Canvas</h1>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Directions:
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+      <ol>
+        <li>Edit the "text" box below</li>
+        <li>Optional:
+        <ul>
+          <li>change the font options</li>
+          <li>change text/background color</li>
+          <li>change the image dimensions</li>
+          <li>re-position text</li>
+        </ul></li>
+        <li>Download the image: right-click and save</li>
+      </ol>
+      </td>
+    </tr>
+  </table>
+
+  <table border=0">
+    <tr>
+      <td align="right">text</td>
+      <td><input type="text" ng-model="text"></td>
+    </tr>
+    <tr>
+      <td align="right">font</td>
+      <td><input type="text" ng-model="font"></td>
+    </tr>
+    <tr>
+      <td align="right">font size</td>
+      <td><input type="number" ng-model="fontSize"></td>
+    </tr>
+    <tr>
+      <td align="right">text color</td>
+      <td><input id="textColorId" ng-model="textColor"></td>
+    </tr>
+    <tr>
+      <td align="right">background color</td>
+      <td><input id="bgColorId" ng-model="bgColor"></td>
+    </tr>
+    <tr>
+      <td align="right">
+        <span title="float [0,1]: 0 = transparent, 1 = opaque">opacity</span>
+      </td>
+      <td><input type="number" ng-model="alpha" min="0" max="1"></td>
+    </tr>
+    <tr>
+      <td align="right">width</td>
+      <td><input type="number" ng-model="width"></td>
+    </tr>
+    <tr>
+      <td align="right">height</td>
+      <td><input type="number" ng-model="height"></td>
+    </tr>
+    <tr>
+      <td align="right">x offset</td>
+      <td><input type="number" ng-model="xOffset"></td>
+    </tr>
+    <tr>
+      <td align="right">y offset</td>
+      <td><input type="number" ng-model="yOffset"></td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+  <p>The black border displayed below is for illustration only and is not part
+  of the final image.</p>
+
+  <img ng-src="{{getDataUrl()}}"
+       ng-height="height"
+       ng-width="width"
+       border="1px solid black">
+</div>
+
+</body>
+</html>
