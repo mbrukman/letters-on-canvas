@@ -6,6 +6,12 @@ purely client-side with Javascript and CSS. You can also use it to generate
 banners with your name or initials where you specifically need an image because
 HTML or plain text will not do.
 
+Live demo
+---------
+
+[Try it out](https://mbrukman.github.io/letters-on-canvas/letters.html) without
+any download or installation.
+
 License
 -------
 
