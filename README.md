@@ -9,7 +9,7 @@ HTML or plain text will not do.
 License
 -------
 
-Apache 2.0; see LICENSE.txt for details.
+Apache 2.0; see [LICENSE.txt](LICENSE.txt) for details.
 
 Disclaimer
 ----------
