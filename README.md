@@ -9,8 +9,8 @@ HTML or plain text will not do.
 Live demo
 ---------
 
-[Try it out](https://mbrukman.github.io/letters-on-canvas/letters.html) without
-any download or installation.
+[Try it out](https://mbrukman.github.io/letters-on-canvas/) without any download
+or installation.
 
 License
 -------
